@@ -1,27 +1,23 @@
 package practical_4
 
 object Q3 {
+
+
   def main(args: Array[String]): Unit = {
-    val names = List("Benny", "Niroshan", "Saman", "Kumara")
-
-    names.foreach { name =>
-      print(formatNames(name, toLower))
-      print("  --  ")
-      print(formatNames(name, toUpper))
-      println()
-    }
+    println(formatNames("Benny")(toUpper))
+    println(formatNames("Niroshan")(str => toUpper(str.take(2)) + toLower(str.drop(2))))
+    println(formatNames("Saman")(toLower))
+    println(formatNames("Kumara")(str => str.head + toLower(str.drop(1).init) + str.last.toUpper))
   }
 
-  def toUpper(str: String): String = {
-    str.toUpperCase
-  }
+  
+  def toUpper(str : String) : String = str.toUpperCase()
 
-  def toLower(str: String): String = {
-    str.toLowerCase
-  }
+  def toLower(str : String) : String = str.toLowerCase()
 
-  def formatNames(name: String, Func: String => String): String = {
-    Func(name)
-  }
+  def formatNames(str : String)(format: String => String) = format(str)
+
+
+
 
 }
