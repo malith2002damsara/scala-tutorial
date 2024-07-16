@@ -6,7 +6,7 @@ object Q2 {
 
   var library: Set[Book] = Set(
     Book("Prabudda", "Mahagama Sekara", "11111"),
-    Book("ape gama", "Martin Wickckramasinghe ", "222222"),
+    Book("Ape gama", "Martin Wickckramasinghe ", "222222"),
     Book("Wassanaya", "Rathna Sri Wijesinghe", "3333333")
   )
 
