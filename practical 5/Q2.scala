@@ -5,9 +5,9 @@ case class Book(title: String, author: String, isbn: String)
 object Q2 {
 
   var library: Set[Book] = Set(
-    Book("1984", "George Orwell", "11111"),
-    Book("To Kill a Mockingbird", "Harper Lee", "222222"),
-    Book("The Great Gatsby", "F. Scott Fitzgerald", "3333333")
+    Book("Prabudda", "Mahagama Sekara", "11111"),
+    Book("ape gama", "Martin Wickckramasinghe ", "222222"),
+    Book("Wassanaya", "Rathna Sri Wijesinghe", "3333333")
   )
 
   def addBook(book: Book): Unit = {
